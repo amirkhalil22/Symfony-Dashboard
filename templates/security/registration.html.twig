@@ -1,0 +1,22 @@
+{% extends "base.html.twig" %}
+
+{% block body %}
+
+<div class="form-screen">
+    <a href="index.html" class="spur-logo"><i class="fas fa-bolt"></i> <span>Payroll Registraion</span></a>
+    <div class="card account-dialog">
+            <div class="card-header bg-primary text-white"> Please sign in </div>
+            <div class="card-body">
+    {{ form_start(form) }}
+    {{ form_row(form.username) }}
+    {{ form_row(form.email) }}
+    {{ form_row(form.password) }}
+    {{ form_row(form.confirm_password) }}
+    <button type="submit" class="btn btn-primary">Sign in</button>
+    {{ form_end(form) }}
+</div>
+</div>    
+</div>
+
+
+{% endblock %}
