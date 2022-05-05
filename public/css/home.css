@@ -1,0 +1,90 @@
+*
+{
+    margin: 0%;
+    padding: 0%;
+}
+body
+{
+    font-family: sans-serif;
+}
+#nav-bar
+{
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+.logo
+{
+    background-image: linear-gradient(to right, #a517ba,#5f1782);
+    padding: 3 !important;
+}
+.logo h2
+{
+    color: #a517ba ;
+    position: relative;
+    -webkit-text-stroke: 0.3vw #fff;
+    padding: 3 ;
+}
+h2::before
+{
+    content: attr(data-text);
+    position: absolute;
+    top: 3;
+    left: 3;
+    width: 3;
+    height: 100%;
+    color: rgb(71, 4, 68);
+    -webkit-text-stroke: 0vw #a517ba;
+    border-right: 2px solid rgb(71, 4, 68);
+    overflow: hidden;
+    animation: animate 4s linear infinite;
+}
+@keyframes animate
+{
+    0%,10%,100%
+    {
+        width: 0;
+    }
+    70%,90%
+    {
+        width: 12.5%;
+    }
+}
+.navbar-brand img
+{
+    height: 40px;
+    padding-left: 20px;
+}
+.navbar-brand
+{
+    color: #fff !important;
+    margin-right: 500px;
+}
+.navbar-nav li
+{
+    padding: 0 10px;
+}
+.navbar-nav li a
+{
+    color: #fff !important;
+    font-weight: 600;
+}
+
+#banner
+{
+    background-image: linear-gradient(to right, #a517ba,#5f1782);
+    color: #fff;
+    padding-top: 5%;
+}
+
+.promo-title
+{
+    font-size: 40px;
+    font-weight: 600;
+    margin-top: 100px;
+}
+.bottom-img
+{
+    width: 100%;
+}
+
